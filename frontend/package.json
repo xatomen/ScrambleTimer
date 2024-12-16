@@ -3,11 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev --port 3001 --turbopack",
     "build": "next build",
-    "start": "next start",
+    "start": "react-scripts start --port 3001",
     "lint": "next lint"
   },
+  "proxy": "http://localhost:3000",
+  "port": 3001,
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
